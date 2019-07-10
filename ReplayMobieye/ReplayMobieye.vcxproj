@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AB7D8A71-BA87-4816-BBE5-3302AAAADD6F}</ProjectGuid>
+    <RootNamespace>ReplayMobieye</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\local\boost_1_66_0;D:\OpenCV330\msvc2015\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\local\boost_1_66_0\lib64-msvc-14.0;D:\OpenCV330\msvc2015\x64\vc14\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\local\boost_1_66_0;D:\OpenCV330\msvc2015\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\local\boost_1_66_0\lib64-msvc-14.0;D:\OpenCV330\msvc2015\x64\vc14\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;opencv_aruco330.lib;opencv_bgsegm330.lib;opencv_bioinspired330.lib;opencv_calib3d330.lib;opencv_ccalib330.lib;opencv_core330.lib;opencv_cudaarithm330.lib;opencv_cudabgsegm330.lib;opencv_cudacodec330.lib;opencv_cudafeatures2d330.lib;opencv_cudafilters330.lib;opencv_cudaimgproc330.lib;opencv_cudalegacy330.lib;opencv_cudaobjdetect330.lib;opencv_cudaoptflow330.lib;opencv_cudastereo330.lib;opencv_cudawarping330.lib;opencv_cudev330.lib;opencv_datasets330.lib;opencv_dnn330.lib;opencv_dpm330.lib;opencv_face330.lib;opencv_features2d330.lib;opencv_flann330.lib;opencv_fuzzy330.lib;opencv_highgui330.lib;opencv_imgcodecs330.lib;opencv_imgproc330.lib;opencv_img_hash330.lib;opencv_line_descriptor330.lib;opencv_ml330.lib;opencv_objdetect330.lib;opencv_optflow330.lib;opencv_phase_unwrapping330.lib;opencv_photo330.lib;opencv_plot330.lib;opencv_reg330.lib;opencv_rgbd330.lib;opencv_saliency330.lib;opencv_shape330.lib;opencv_stereo330.lib;opencv_stitching330.lib;opencv_structured_light330.lib;opencv_superres330.lib;opencv_surface_matching330.lib;opencv_text330.lib;opencv_tracking330.lib;opencv_video330.lib;opencv_videoio330.lib;opencv_videostab330.lib;opencv_world330.lib;opencv_xfeatures2d330.lib;opencv_ximgproc330.lib;opencv_xobjdetect330.lib;opencv_xphoto330.lib;boost_atomic-vc140-mt-gd-x64-1_66.lib;boost_atomic-vc140-mt-x64-1_66.lib;boost_bzip2-vc140-mt-gd-x64-1_66.lib;boost_bzip2-vc140-mt-x64-1_66.lib;boost_chrono-vc140-mt-gd-x64-1_66.lib;boost_chrono-vc140-mt-x64-1_66.lib;boost_container-vc140-mt-gd-x64-1_66.lib;boost_container-vc140-mt-x64-1_66.lib;boost_context-vc140-mt-gd-x64-1_66.lib;boost_context-vc140-mt-x64-1_66.lib;boost_coroutine-vc140-mt-gd-x64-1_66.lib;boost_coroutine-vc140-mt-x64-1_66.lib;boost_date_time-vc140-mt-gd-x64-1_66.lib;boost_date_time-vc140-mt-x64-1_66.lib;boost_fiber-vc140-mt-gd-x64-1_66.lib;boost_fiber-vc140-mt-x64-1_66.lib;boost_filesystem-vc140-mt-gd-x64-1_66.lib;boost_filesystem-vc140-mt-x64-1_66.lib;boost_graph-vc140-mt-gd-x64-1_66.lib;boost_graph-vc140-mt-x64-1_66.lib;boost_iostreams-vc140-mt-gd-x64-1_66.lib;boost_iostreams-vc140-mt-x64-1_66.lib;boost_locale-vc140-mt-gd-x64-1_66.lib;boost_locale-vc140-mt-x64-1_66.lib;boost_log-vc140-mt-gd-x64-1_66.lib;boost_log-vc140-mt-x64-1_66.lib;boost_log_setup-vc140-mt-gd-x64-1_66.lib;boost_log_setup-vc140-mt-x64-1_66.lib;boost_math_c99-vc140-mt-gd-x64-1_66.lib;boost_math_c99-vc140-mt-x64-1_66.lib;boost_math_c99f-vc140-mt-gd-x64-1_66.lib;boost_math_c99f-vc140-mt-x64-1_66.lib;boost_math_c99l-vc140-mt-gd-x64-1_66.lib;boost_math_c99l-vc140-mt-x64-1_66.lib;boost_math_tr1-vc140-mt-gd-x64-1_66.lib;boost_math_tr1-vc140-mt-x64-1_66.lib;boost_math_tr1f-vc140-mt-gd-x64-1_66.lib;boost_math_tr1f-vc140-mt-x64-1_66.lib;boost_math_tr1l-vc140-mt-gd-x64-1_66.lib;boost_math_tr1l-vc140-mt-x64-1_66.lib;boost_prg_exec_monitor-vc140-mt-gd-x64-1_66.lib;boost_prg_exec_monitor-vc140-mt-x64-1_66.lib;boost_program_options-vc140-mt-gd-x64-1_66.lib;boost_program_options-vc140-mt-x64-1_66.lib;boost_python-vc140-mt-gd-x64-1_66.lib;boost_python-vc140-mt-x64-1_66.lib;boost_random-vc140-mt-gd-x64-1_66.lib;boost_random-vc140-mt-x64-1_66.lib;boost_regex-vc140-mt-gd-x64-1_66.lib;boost_regex-vc140-mt-x64-1_66.lib;boost_serialization-vc140-mt-gd-x64-1_66.lib;boost_serialization-vc140-mt-x64-1_66.lib;boost_signals-vc140-mt-gd-x64-1_66.lib;boost_signals-vc140-mt-x64-1_66.lib;boost_stacktrace_noop-vc140-mt-gd-x64-1_66.lib;boost_stacktrace_noop-vc140-mt-x64-1_66.lib;boost_stacktrace_windbg-vc140-mt-gd-x64-1_66.lib;boost_stacktrace_windbg-vc140-mt-x64-1_66.lib;boost_stacktrace_windbg_cached-vc140-mt-gd-x64-1_66.lib;boost_stacktrace_windbg_cached-vc140-mt-x64-1_66.lib;boost_system-vc140-mt-gd-x64-1_66.lib;boost_system-vc140-mt-x64-1_66.lib;boost_thread-vc140-mt-gd-x64-1_66.lib;boost_thread-vc140-mt-x64-1_66.lib;boost_timer-vc140-mt-gd-x64-1_66.lib;boost_timer-vc140-mt-x64-1_66.lib;boost_type_erasure-vc140-mt-gd-x64-1_66.lib;boost_type_erasure-vc140-mt-x64-1_66.lib;boost_unit_test_framework-vc140-mt-gd-x64-1_66.lib;boost_unit_test_framework-vc140-mt-x64-1_66.lib;boost_wave-vc140-mt-gd-x64-1_66.lib;boost_wave-vc140-mt-x64-1_66.lib;boost_wserialization-vc140-mt-gd-x64-1_66.lib;boost_wserialization-vc140-mt-x64-1_66.lib;boost_zlib-vc140-mt-gd-x64-1_66.lib;boost_zlib-vc140-mt-x64-1_66.lib;libboost_atomic-vc140-mt-gd-x64-1_66.lib;libboost_atomic-vc140-mt-s-x64-1_66.lib;libboost_atomic-vc140-mt-sgd-x64-1_66.lib;libboost_atomic-vc140-mt-x64-1_66.lib;libboost_bzip2-vc140-mt-gd-x64-1_66.lib;libboost_bzip2-vc140-mt-s-x64-1_66.lib;libboost_bzip2-vc140-mt-sgd-x64-1_66.lib;libboost_bzip2-vc140-mt-x64-1_66.lib;libboost_chrono-vc140-mt-gd-x64-1_66.lib;libboost_chrono-vc140-mt-s-x64-1_66.lib;libboost_chrono-vc140-mt-sgd-x64-1_66.lib;libboost_chrono-vc140-mt-x64-1_66.lib;libboost_container-vc140-mt-gd-x64-1_66.lib;libboost_container-vc140-mt-s-x64-1_66.lib;libboost_container-vc140-mt-sgd-x64-1_66.lib;libboost_container-vc140-mt-x64-1_66.lib;libboost_context-vc140-mt-gd-x64-1_66.lib;libboost_context-vc140-mt-s-x64-1_66.lib;libboost_context-vc140-mt-sgd-x64-1_66.lib;libboost_context-vc140-mt-x64-1_66.lib;libboost_coroutine-vc140-mt-gd-x64-1_66.lib;libboost_coroutine-vc140-mt-s-x64-1_66.lib;libboost_coroutine-vc140-mt-sgd-x64-1_66.lib;libboost_coroutine-vc140-mt-x64-1_66.lib;libboost_date_time-vc140-mt-gd-x64-1_66.lib;libboost_date_time-vc140-mt-s-x64-1_66.lib;libboost_date_time-vc140-mt-sgd-x64-1_66.lib;libboost_date_time-vc140-mt-x64-1_66.lib;libboost_exception-vc140-mt-gd-x64-1_66.lib;libboost_exception-vc140-mt-s-x64-1_66.lib;libboost_exception-vc140-mt-sgd-x64-1_66.lib;libboost_exception-vc140-mt-x64-1_66.lib;libboost_fiber-vc140-mt-gd-x64-1_66.lib;libboost_fiber-vc140-mt-s-x64-1_66.lib;libboost_fiber-vc140-mt-sgd-x64-1_66.lib;libboost_fiber-vc140-mt-x64-1_66.lib;libboost_filesystem-vc140-mt-gd-x64-1_66.lib;libboost_filesystem-vc140-mt-s-x64-1_66.lib;libboost_filesystem-vc140-mt-sgd-x64-1_66.lib;libboost_filesystem-vc140-mt-x64-1_66.lib;libboost_graph-vc140-mt-gd-x64-1_66.lib;libboost_graph-vc140-mt-s-x64-1_66.lib;libboost_graph-vc140-mt-sgd-x64-1_66.lib;libboost_graph-vc140-mt-x64-1_66.lib;libboost_iostreams-vc140-mt-gd-x64-1_66.lib;libboost_iostreams-vc140-mt-s-x64-1_66.lib;libboost_iostreams-vc140-mt-sgd-x64-1_66.lib;libboost_iostreams-vc140-mt-x64-1_66.lib;libboost_locale-vc140-mt-gd-x64-1_66.lib;libboost_locale-vc140-mt-s-x64-1_66.lib;libboost_locale-vc140-mt-sgd-x64-1_66.lib;libboost_locale-vc140-mt-x64-1_66.lib;libboost_log-vc140-mt-gd-x64-1_66.lib;libboost_log-vc140-mt-s-x64-1_66.lib;libboost_log-vc140-mt-sgd-x64-1_66.lib;libboost_log-vc140-mt-x64-1_66.lib;libboost_log_setup-vc140-mt-gd-x64-1_66.lib;libboost_log_setup-vc140-mt-s-x64-1_66.lib;libboost_log_setup-vc140-mt-sgd-x64-1_66.lib;libboost_log_setup-vc140-mt-x64-1_66.lib;libboost_math_c99-vc140-mt-gd-x64-1_66.lib;libboost_math_c99-vc140-mt-s-x64-1_66.lib;libboost_math_c99-vc140-mt-sgd-x64-1_66.lib;libboost_math_c99-vc140-mt-x64-1_66.lib;libboost_math_c99f-vc140-mt-gd-x64-1_66.lib;libboost_math_c99f-vc140-mt-s-x64-1_66.lib;libboost_math_c99f-vc140-mt-sgd-x64-1_66.lib;libboost_math_c99f-vc140-mt-x64-1_66.lib;libboost_math_c99l-vc140-mt-gd-x64-1_66.lib;libboost_math_c99l-vc140-mt-s-x64-1_66.lib;libboost_math_c99l-vc140-mt-sgd-x64-1_66.lib;libboost_math_c99l-vc140-mt-x64-1_66.lib;libboost_math_tr1-vc140-mt-gd-x64-1_66.lib;libboost_math_tr1-vc140-mt-s-x64-1_66.lib;libboost_math_tr1-vc140-mt-sgd-x64-1_66.lib;libboost_math_tr1-vc140-mt-x64-1_66.lib;libboost_math_tr1f-vc140-mt-gd-x64-1_66.lib;libboost_math_tr1f-vc140-mt-s-x64-1_66.lib;libboost_math_tr1f-vc140-mt-sgd-x64-1_66.lib;libboost_math_tr1f-vc140-mt-x64-1_66.lib;libboost_math_tr1l-vc140-mt-gd-x64-1_66.lib;libboost_math_tr1l-vc140-mt-s-x64-1_66.lib;libboost_math_tr1l-vc140-mt-sgd-x64-1_66.lib;libboost_math_tr1l-vc140-mt-x64-1_66.lib;libboost_prg_exec_monitor-vc140-mt-gd-x64-1_66.lib;libboost_prg_exec_monitor-vc140-mt-s-x64-1_66.lib;libboost_prg_exec_monitor-vc140-mt-sgd-x64-1_66.lib;libboost_prg_exec_monitor-vc140-mt-x64-1_66.lib;libboost_program_options-vc140-mt-gd-x64-1_66.lib;libboost_program_options-vc140-mt-s-x64-1_66.lib;libboost_program_options-vc140-mt-sgd-x64-1_66.lib;libboost_program_options-vc140-mt-x64-1_66.lib;libboost_python-vc140-mt-gd-x64-1_66.lib;libboost_python-vc140-mt-s-x64-1_66.lib;libboost_python-vc140-mt-sgd-x64-1_66.lib;libboost_python-vc140-mt-x64-1_66.lib;libboost_random-vc140-mt-gd-x64-1_66.lib;libboost_random-vc140-mt-s-x64-1_66.lib;libboost_random-vc140-mt-sgd-x64-1_66.lib;libboost_random-vc140-mt-x64-1_66.lib;libboost_regex-vc140-mt-gd-x64-1_66.lib;libboost_regex-vc140-mt-s-x64-1_66.lib;libboost_regex-vc140-mt-sgd-x64-1_66.lib;libboost_regex-vc140-mt-x64-1_66.lib;libboost_serialization-vc140-mt-gd-x64-1_66.lib;libboost_serialization-vc140-mt-s-x64-1_66.lib;libboost_serialization-vc140-mt-sgd-x64-1_66.lib;libboost_serialization-vc140-mt-x64-1_66.lib;libboost_signals-vc140-mt-gd-x64-1_66.lib;libboost_signals-vc140-mt-s-x64-1_66.lib;libboost_signals-vc140-mt-sgd-x64-1_66.lib;libboost_signals-vc140-mt-x64-1_66.lib;libboost_stacktrace_noop-vc140-mt-gd-x64-1_66.lib;libboost_stacktrace_noop-vc140-mt-s-x64-1_66.lib;libboost_stacktrace_noop-vc140-mt-sgd-x64-1_66.lib;libboost_stacktrace_noop-vc140-mt-x64-1_66.lib;libboost_stacktrace_windbg-vc140-mt-gd-x64-1_66.lib;libboost_stacktrace_windbg-vc140-mt-s-x64-1_66.lib;libboost_stacktrace_windbg-vc140-mt-sgd-x64-1_66.lib;libboost_stacktrace_windbg-vc140-mt-x64-1_66.lib;libboost_stacktrace_windbg_cached-vc140-mt-gd-x64-1_66.lib;libboost_stacktrace_windbg_cached-vc140-mt-s-x64-1_66.lib;libboost_stacktrace_windbg_cached-vc140-mt-sgd-x64-1_66.lib;libboost_stacktrace_windbg_cached-vc140-mt-x64-1_66.lib;libboost_system-vc140-mt-gd-x64-1_66.lib;libboost_system-vc140-mt-s-x64-1_66.lib;libboost_system-vc140-mt-sgd-x64-1_66.lib;libboost_system-vc140-mt-x64-1_66.lib;libboost_test_exec_monitor-vc140-mt-gd-x64-1_66.lib;libboost_test_exec_monitor-vc140-mt-s-x64-1_66.lib;libboost_test_exec_monitor-vc140-mt-sgd-x64-1_66.lib;libboost_test_exec_monitor-vc140-mt-x64-1_66.lib;libboost_thread-vc140-mt-gd-x64-1_66.lib;libboost_thread-vc140-mt-s-x64-1_66.lib;libboost_thread-vc140-mt-sgd-x64-1_66.lib;libboost_thread-vc140-mt-x64-1_66.lib;libboost_timer-vc140-mt-gd-x64-1_66.lib;libboost_timer-vc140-mt-s-x64-1_66.lib;libboost_timer-vc140-mt-sgd-x64-1_66.lib;libboost_timer-vc140-mt-x64-1_66.lib;libboost_type_erasure-vc140-mt-gd-x64-1_66.lib;libboost_type_erasure-vc140-mt-s-x64-1_66.lib;libboost_type_erasure-vc140-mt-sgd-x64-1_66.lib;libboost_type_erasure-vc140-mt-x64-1_66.lib;libboost_unit_test_framework-vc140-mt-gd-x64-1_66.lib;libboost_unit_test_framework-vc140-mt-s-x64-1_66.lib;libboost_unit_test_framework-vc140-mt-sgd-x64-1_66.lib;libboost_unit_test_framework-vc140-mt-x64-1_66.lib;libboost_wave-vc140-mt-gd-x64-1_66.lib;libboost_wave-vc140-mt-s-x64-1_66.lib;libboost_wave-vc140-mt-sgd-x64-1_66.lib;libboost_wave-vc140-mt-x64-1_66.lib;libboost_wserialization-vc140-mt-gd-x64-1_66.lib;libboost_wserialization-vc140-mt-s-x64-1_66.lib;libboost_wserialization-vc140-mt-sgd-x64-1_66.lib;libboost_wserialization-vc140-mt-x64-1_66.lib;libboost_zlib-vc140-mt-gd-x64-1_66.lib;libboost_zlib-vc140-mt-s-x64-1_66.lib;libboost_zlib-vc140-mt-sgd-x64-1_66.lib;libboost_zlib-vc140-mt-x64-1_66.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opencv_aruco330.lib;opencv_bgsegm330.lib;opencv_bioinspired330.lib;opencv_calib3d330.lib;opencv_ccalib330.lib;opencv_core330.lib;opencv_cudaarithm330.lib;opencv_cudabgsegm330.lib;opencv_cudacodec330.lib;opencv_cudafeatures2d330.lib;opencv_cudafilters330.lib;opencv_cudaimgproc330.lib;opencv_cudalegacy330.lib;opencv_cudaobjdetect330.lib;opencv_cudaoptflow330.lib;opencv_cudastereo330.lib;opencv_cudawarping330.lib;opencv_cudev330.lib;opencv_datasets330.lib;opencv_dnn330.lib;opencv_dpm330.lib;opencv_face330.lib;opencv_features2d330.lib;opencv_flann330.lib;opencv_fuzzy330.lib;opencv_highgui330.lib;opencv_imgcodecs330.lib;opencv_imgproc330.lib;opencv_img_hash330.lib;opencv_line_descriptor330.lib;opencv_ml330.lib;opencv_objdetect330.lib;opencv_optflow330.lib;opencv_phase_unwrapping330.lib;opencv_photo330.lib;opencv_plot330.lib;opencv_reg330.lib;opencv_rgbd330.lib;opencv_saliency330.lib;opencv_shape330.lib;opencv_stereo330.lib;opencv_stitching330.lib;opencv_structured_light330.lib;opencv_superres330.lib;opencv_surface_matching330.lib;opencv_text330.lib;opencv_tracking330.lib;opencv_video330.lib;opencv_videoio330.lib;opencv_videostab330.lib;opencv_world330.lib;opencv_xfeatures2d330.lib;opencv_ximgproc330.lib;opencv_xobjdetect330.lib;opencv_xphoto330.lib;boost_atomic-vc140-mt-gd-x64-1_66.lib;boost_atomic-vc140-mt-x64-1_66.lib;boost_bzip2-vc140-mt-gd-x64-1_66.lib;boost_bzip2-vc140-mt-x64-1_66.lib;boost_chrono-vc140-mt-gd-x64-1_66.lib;boost_chrono-vc140-mt-x64-1_66.lib;boost_container-vc140-mt-gd-x64-1_66.lib;boost_container-vc140-mt-x64-1_66.lib;boost_context-vc140-mt-gd-x64-1_66.lib;boost_context-vc140-mt-x64-1_66.lib;boost_coroutine-vc140-mt-gd-x64-1_66.lib;boost_coroutine-vc140-mt-x64-1_66.lib;boost_date_time-vc140-mt-gd-x64-1_66.lib;boost_date_time-vc140-mt-x64-1_66.lib;boost_fiber-vc140-mt-gd-x64-1_66.lib;boost_fiber-vc140-mt-x64-1_66.lib;boost_filesystem-vc140-mt-gd-x64-1_66.lib;boost_filesystem-vc140-mt-x64-1_66.lib;boost_graph-vc140-mt-gd-x64-1_66.lib;boost_graph-vc140-mt-x64-1_66.lib;boost_iostreams-vc140-mt-gd-x64-1_66.lib;boost_iostreams-vc140-mt-x64-1_66.lib;boost_locale-vc140-mt-gd-x64-1_66.lib;boost_locale-vc140-mt-x64-1_66.lib;boost_log-vc140-mt-gd-x64-1_66.lib;boost_log-vc140-mt-x64-1_66.lib;boost_log_setup-vc140-mt-gd-x64-1_66.lib;boost_log_setup-vc140-mt-x64-1_66.lib;boost_math_c99-vc140-mt-gd-x64-1_66.lib;boost_math_c99-vc140-mt-x64-1_66.lib;boost_math_c99f-vc140-mt-gd-x64-1_66.lib;boost_math_c99f-vc140-mt-x64-1_66.lib;boost_math_c99l-vc140-mt-gd-x64-1_66.lib;boost_math_c99l-vc140-mt-x64-1_66.lib;boost_math_tr1-vc140-mt-gd-x64-1_66.lib;boost_math_tr1-vc140-mt-x64-1_66.lib;boost_math_tr1f-vc140-mt-gd-x64-1_66.lib;boost_math_tr1f-vc140-mt-x64-1_66.lib;boost_math_tr1l-vc140-mt-gd-x64-1_66.lib;boost_math_tr1l-vc140-mt-x64-1_66.lib;boost_prg_exec_monitor-vc140-mt-gd-x64-1_66.lib;boost_prg_exec_monitor-vc140-mt-x64-1_66.lib;boost_program_options-vc140-mt-gd-x64-1_66.lib;boost_program_options-vc140-mt-x64-1_66.lib;boost_python-vc140-mt-gd-x64-1_66.lib;boost_python-vc140-mt-x64-1_66.lib;boost_random-vc140-mt-gd-x64-1_66.lib;boost_random-vc140-mt-x64-1_66.lib;boost_regex-vc140-mt-gd-x64-1_66.lib;boost_regex-vc140-mt-x64-1_66.lib;boost_serialization-vc140-mt-gd-x64-1_66.lib;boost_serialization-vc140-mt-x64-1_66.lib;boost_signals-vc140-mt-gd-x64-1_66.lib;boost_signals-vc140-mt-x64-1_66.lib;boost_stacktrace_noop-vc140-mt-gd-x64-1_66.lib;boost_stacktrace_noop-vc140-mt-x64-1_66.lib;boost_stacktrace_windbg-vc140-mt-gd-x64-1_66.lib;boost_stacktrace_windbg-vc140-mt-x64-1_66.lib;boost_stacktrace_windbg_cached-vc140-mt-gd-x64-1_66.lib;boost_stacktrace_windbg_cached-vc140-mt-x64-1_66.lib;boost_system-vc140-mt-gd-x64-1_66.lib;boost_system-vc140-mt-x64-1_66.lib;boost_thread-vc140-mt-gd-x64-1_66.lib;boost_thread-vc140-mt-x64-1_66.lib;boost_timer-vc140-mt-gd-x64-1_66.lib;boost_timer-vc140-mt-x64-1_66.lib;boost_type_erasure-vc140-mt-gd-x64-1_66.lib;boost_type_erasure-vc140-mt-x64-1_66.lib;boost_unit_test_framework-vc140-mt-gd-x64-1_66.lib;boost_unit_test_framework-vc140-mt-x64-1_66.lib;boost_wave-vc140-mt-gd-x64-1_66.lib;boost_wave-vc140-mt-x64-1_66.lib;boost_wserialization-vc140-mt-gd-x64-1_66.lib;boost_wserialization-vc140-mt-x64-1_66.lib;boost_zlib-vc140-mt-gd-x64-1_66.lib;boost_zlib-vc140-mt-x64-1_66.lib;libboost_atomic-vc140-mt-gd-x64-1_66.lib;libboost_atomic-vc140-mt-s-x64-1_66.lib;libboost_atomic-vc140-mt-sgd-x64-1_66.lib;libboost_atomic-vc140-mt-x64-1_66.lib;libboost_bzip2-vc140-mt-gd-x64-1_66.lib;libboost_bzip2-vc140-mt-s-x64-1_66.lib;libboost_bzip2-vc140-mt-sgd-x64-1_66.lib;libboost_bzip2-vc140-mt-x64-1_66.lib;libboost_chrono-vc140-mt-gd-x64-1_66.lib;libboost_chrono-vc140-mt-s-x64-1_66.lib;libboost_chrono-vc140-mt-sgd-x64-1_66.lib;libboost_chrono-vc140-mt-x64-1_66.lib;libboost_container-vc140-mt-gd-x64-1_66.lib;libboost_container-vc140-mt-s-x64-1_66.lib;libboost_container-vc140-mt-sgd-x64-1_66.lib;libboost_container-vc140-mt-x64-1_66.lib;libboost_context-vc140-mt-gd-x64-1_66.lib;libboost_context-vc140-mt-s-x64-1_66.lib;libboost_context-vc140-mt-sgd-x64-1_66.lib;libboost_context-vc140-mt-x64-1_66.lib;libboost_coroutine-vc140-mt-gd-x64-1_66.lib;libboost_coroutine-vc140-mt-s-x64-1_66.lib;libboost_coroutine-vc140-mt-sgd-x64-1_66.lib;libboost_coroutine-vc140-mt-x64-1_66.lib;libboost_date_time-vc140-mt-gd-x64-1_66.lib;libboost_date_time-vc140-mt-s-x64-1_66.lib;libboost_date_time-vc140-mt-sgd-x64-1_66.lib;libboost_date_time-vc140-mt-x64-1_66.lib;libboost_exception-vc140-mt-gd-x64-1_66.lib;libboost_exception-vc140-mt-s-x64-1_66.lib;libboost_exception-vc140-mt-sgd-x64-1_66.lib;libboost_exception-vc140-mt-x64-1_66.lib;libboost_fiber-vc140-mt-gd-x64-1_66.lib;libboost_fiber-vc140-mt-s-x64-1_66.lib;libboost_fiber-vc140-mt-sgd-x64-1_66.lib;libboost_fiber-vc140-mt-x64-1_66.lib;libboost_filesystem-vc140-mt-gd-x64-1_66.lib;libboost_filesystem-vc140-mt-s-x64-1_66.lib;libboost_filesystem-vc140-mt-sgd-x64-1_66.lib;libboost_filesystem-vc140-mt-x64-1_66.lib;libboost_graph-vc140-mt-gd-x64-1_66.lib;libboost_graph-vc140-mt-s-x64-1_66.lib;libboost_graph-vc140-mt-sgd-x64-1_66.lib;libboost_graph-vc140-mt-x64-1_66.lib;libboost_iostreams-vc140-mt-gd-x64-1_66.lib;libboost_iostreams-vc140-mt-s-x64-1_66.lib;libboost_iostreams-vc140-mt-sgd-x64-1_66.lib;libboost_iostreams-vc140-mt-x64-1_66.lib;libboost_locale-vc140-mt-gd-x64-1_66.lib;libboost_locale-vc140-mt-s-x64-1_66.lib;libboost_locale-vc140-mt-sgd-x64-1_66.lib;libboost_locale-vc140-mt-x64-1_66.lib;libboost_log-vc140-mt-gd-x64-1_66.lib;libboost_log-vc140-mt-s-x64-1_66.lib;libboost_log-vc140-mt-sgd-x64-1_66.lib;libboost_log-vc140-mt-x64-1_66.lib;libboost_log_setup-vc140-mt-gd-x64-1_66.lib;libboost_log_setup-vc140-mt-s-x64-1_66.lib;libboost_log_setup-vc140-mt-sgd-x64-1_66.lib;libboost_log_setup-vc140-mt-x64-1_66.lib;libboost_math_c99-vc140-mt-gd-x64-1_66.lib;libboost_math_c99-vc140-mt-s-x64-1_66.lib;libboost_math_c99-vc140-mt-sgd-x64-1_66.lib;libboost_math_c99-vc140-mt-x64-1_66.lib;libboost_math_c99f-vc140-mt-gd-x64-1_66.lib;libboost_math_c99f-vc140-mt-s-x64-1_66.lib;libboost_math_c99f-vc140-mt-sgd-x64-1_66.lib;libboost_math_c99f-vc140-mt-x64-1_66.lib;libboost_math_c99l-vc140-mt-gd-x64-1_66.lib;libboost_math_c99l-vc140-mt-s-x64-1_66.lib;libboost_math_c99l-vc140-mt-sgd-x64-1_66.lib;libboost_math_c99l-vc140-mt-x64-1_66.lib;libboost_math_tr1-vc140-mt-gd-x64-1_66.lib;libboost_math_tr1-vc140-mt-s-x64-1_66.lib;libboost_math_tr1-vc140-mt-sgd-x64-1_66.lib;libboost_math_tr1-vc140-mt-x64-1_66.lib;libboost_math_tr1f-vc140-mt-gd-x64-1_66.lib;libboost_math_tr1f-vc140-mt-s-x64-1_66.lib;libboost_math_tr1f-vc140-mt-sgd-x64-1_66.lib;libboost_math_tr1f-vc140-mt-x64-1_66.lib;libboost_math_tr1l-vc140-mt-gd-x64-1_66.lib;libboost_math_tr1l-vc140-mt-s-x64-1_66.lib;libboost_math_tr1l-vc140-mt-sgd-x64-1_66.lib;libboost_math_tr1l-vc140-mt-x64-1_66.lib;libboost_prg_exec_monitor-vc140-mt-gd-x64-1_66.lib;libboost_prg_exec_monitor-vc140-mt-s-x64-1_66.lib;libboost_prg_exec_monitor-vc140-mt-sgd-x64-1_66.lib;libboost_prg_exec_monitor-vc140-mt-x64-1_66.lib;libboost_program_options-vc140-mt-gd-x64-1_66.lib;libboost_program_options-vc140-mt-s-x64-1_66.lib;libboost_program_options-vc140-mt-sgd-x64-1_66.lib;libboost_program_options-vc140-mt-x64-1_66.lib;libboost_python-vc140-mt-gd-x64-1_66.lib;libboost_python-vc140-mt-s-x64-1_66.lib;libboost_python-vc140-mt-sgd-x64-1_66.lib;libboost_python-vc140-mt-x64-1_66.lib;libboost_random-vc140-mt-gd-x64-1_66.lib;libboost_random-vc140-mt-s-x64-1_66.lib;libboost_random-vc140-mt-sgd-x64-1_66.lib;libboost_random-vc140-mt-x64-1_66.lib;libboost_regex-vc140-mt-gd-x64-1_66.lib;libboost_regex-vc140-mt-s-x64-1_66.lib;libboost_regex-vc140-mt-sgd-x64-1_66.lib;libboost_regex-vc140-mt-x64-1_66.lib;libboost_serialization-vc140-mt-gd-x64-1_66.lib;libboost_serialization-vc140-mt-s-x64-1_66.lib;libboost_serialization-vc140-mt-sgd-x64-1_66.lib;libboost_serialization-vc140-mt-x64-1_66.lib;libboost_signals-vc140-mt-gd-x64-1_66.lib;libboost_signals-vc140-mt-s-x64-1_66.lib;libboost_signals-vc140-mt-sgd-x64-1_66.lib;libboost_signals-vc140-mt-x64-1_66.lib;libboost_stacktrace_noop-vc140-mt-gd-x64-1_66.lib;libboost_stacktrace_noop-vc140-mt-s-x64-1_66.lib;libboost_stacktrace_noop-vc140-mt-sgd-x64-1_66.lib;libboost_stacktrace_noop-vc140-mt-x64-1_66.lib;libboost_stacktrace_windbg-vc140-mt-gd-x64-1_66.lib;libboost_stacktrace_windbg-vc140-mt-s-x64-1_66.lib;libboost_stacktrace_windbg-vc140-mt-sgd-x64-1_66.lib;libboost_stacktrace_windbg-vc140-mt-x64-1_66.lib;libboost_stacktrace_windbg_cached-vc140-mt-gd-x64-1_66.lib;libboost_stacktrace_windbg_cached-vc140-mt-s-x64-1_66.lib;libboost_stacktrace_windbg_cached-vc140-mt-sgd-x64-1_66.lib;libboost_stacktrace_windbg_cached-vc140-mt-x64-1_66.lib;libboost_system-vc140-mt-gd-x64-1_66.lib;libboost_system-vc140-mt-s-x64-1_66.lib;libboost_system-vc140-mt-sgd-x64-1_66.lib;libboost_system-vc140-mt-x64-1_66.lib;libboost_test_exec_monitor-vc140-mt-gd-x64-1_66.lib;libboost_test_exec_monitor-vc140-mt-s-x64-1_66.lib;libboost_test_exec_monitor-vc140-mt-sgd-x64-1_66.lib;libboost_test_exec_monitor-vc140-mt-x64-1_66.lib;libboost_thread-vc140-mt-gd-x64-1_66.lib;libboost_thread-vc140-mt-s-x64-1_66.lib;libboost_thread-vc140-mt-sgd-x64-1_66.lib;libboost_thread-vc140-mt-x64-1_66.lib;libboost_timer-vc140-mt-gd-x64-1_66.lib;libboost_timer-vc140-mt-s-x64-1_66.lib;libboost_timer-vc140-mt-sgd-x64-1_66.lib;libboost_timer-vc140-mt-x64-1_66.lib;libboost_type_erasure-vc140-mt-gd-x64-1_66.lib;libboost_type_erasure-vc140-mt-s-x64-1_66.lib;libboost_type_erasure-vc140-mt-sgd-x64-1_66.lib;libboost_type_erasure-vc140-mt-x64-1_66.lib;libboost_unit_test_framework-vc140-mt-gd-x64-1_66.lib;libboost_unit_test_framework-vc140-mt-s-x64-1_66.lib;libboost_unit_test_framework-vc140-mt-sgd-x64-1_66.lib;libboost_unit_test_framework-vc140-mt-x64-1_66.lib;libboost_wave-vc140-mt-gd-x64-1_66.lib;libboost_wave-vc140-mt-s-x64-1_66.lib;libboost_wave-vc140-mt-sgd-x64-1_66.lib;libboost_wave-vc140-mt-x64-1_66.lib;libboost_wserialization-vc140-mt-gd-x64-1_66.lib;libboost_wserialization-vc140-mt-s-x64-1_66.lib;libboost_wserialization-vc140-mt-sgd-x64-1_66.lib;libboost_wserialization-vc140-mt-x64-1_66.lib;libboost_zlib-vc140-mt-gd-x64-1_66.lib;libboost_zlib-vc140-mt-s-x64-1_66.lib;libboost_zlib-vc140-mt-sgd-x64-1_66.lib;libboost_zlib-vc140-mt-x64-1_66.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CvvImage.h" />
+    <ClInclude Include="ReplayMobieye.h" />
+    <ClInclude Include="ReplayMobieyeDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="talk_to_client.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CvvImage.cpp" />
+    <ClCompile Include="ReplayMobieye.cpp" />
+    <ClCompile Include="ReplayMobieyeDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="talk_to_client.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ReplayMobieye.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ReplayMobieye.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ReplayMobieye.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="ReplayMobieye.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
